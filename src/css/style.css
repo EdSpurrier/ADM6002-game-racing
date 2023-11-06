@@ -1,0 +1,390 @@
+#main-panel {
+  top: 0px;
+  left: 0px;
+  width: 970px;
+  height: 500px;
+  position: absolute;
+  background-color: black;
+  overflow: hidden; }
+
+* {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none; }
+
+.z {
+  z-index: 0; }
+
+#game {
+  z-index: 5; }
+
+.top-gradient {
+  z-index: 10; }
+
+.z {
+  z-index: 12; }
+
+.z {
+  z-index: 13; }
+
+.z {
+  z-index: 14; }
+
+.z {
+  z-index: 15; }
+
+#game-hud {
+  z-index: 20; }
+
+.hud-item {
+  z-index: 21; }
+
+#view-instructions, #ready, .instructions {
+  z-index: 22; }
+
+#ready-1, #ready-2, #ready-3, #go, #nice-driving, .move-complete {
+  z-index: 23; }
+
+#inputVideo, #motion-track-overlay, #outputVideo {
+  z-index: 40; }
+
+#motion-control-helper, .motion-area {
+  z-index: 41; }
+
+#inner-panel, #view-end-game, #motion-line {
+  z-index: 50; }
+
+.end-game-asset {
+  z-index: 60; }
+
+#ytClose_dc, #ctaClose_dc, #abarth-logo {
+  z-index: 100; }
+
+/*
+
+@font-face {
+	font-family: fiatadvert01arg;
+	src: url(fiatadvert01-webfont.eot);
+	src: url(fiatadvert01-webfont.eot?#iefix) format("embedded-opentype"), url(fiatadvert01-webfont.woff2) format("woff2"), url(fiatadvert01-webfont.woff) format("woff"), url(fiatadvert01-webfont.ttf) format("truetype"), url(fiatadvert01-webfont.svg#fiatadvert01arg) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+*/
+#expanded-panel {
+  -webkit-transform: translate3d(0, 0, 0); }
+  #expanded-panel .top-gradient {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 122px; }
+
+#collapsed-panel {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+  #collapsed-panel #tag-line {
+    position: absolute;
+    top: 70px;
+    right: 50px; }
+  #collapsed-panel #description {
+    position: absolute;
+    top: 115px;
+    right: 50px; }
+
+#abarth-logo {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
+#fps {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+#game-hud {
+  position: absolute;
+  width: 970px;
+  height: 500px;
+  top: 0;
+  left: 0; }
+  #game-hud #gold, #game-hud #silver, #game-hud #bronze {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    top: 110px; }
+  #game-hud .hud-item, #game-hud .race-starter, #game-hud .hud-lap, #game-hud #nice-driving {
+    position: absolute; }
+  #game-hud .hud-lap {
+    top: 40px;
+    left: 0px; }
+  #game-hud #hud-restart {
+    left: 5px;
+    top: 74px;
+    cursor: pointer; }
+  #game-hud #hud-end-game {
+    left: 5px;
+    top: 89px;
+    cursor: pointer; }
+  #game-hud #hud-options {
+    left: 15px;
+    bottom: 10px;
+    cursor: pointer; }
+  #game-hud .hud-sound {
+    left: 48px;
+    bottom: 12px;
+    cursor: pointer; }
+  #game-hud .hud-sound-muted {
+    visibility: hidden; }
+  #game-hud .hud-sound-unmuted {
+    visibility: visible; }
+  #game-hud #hud-lap-time {
+    position: absolute;
+    top: 101px;
+    left: -190px;
+    width: 90px;
+    color: white;
+    font-size: 26px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    padding-left: 9px;
+    padding-left: 9px; }
+  #game-hud .race-starter {
+    top: 112px;
+    left: 50%;
+    margin-left: -41px; }
+    #game-hud .race-starter#go {
+      margin-left: -95px; }
+  #game-hud #nice-driving {
+    top: 190px;
+    left: 50%;
+    margin-left: -173px; }
+  #game-hud #race-starter-bg {
+    top: 0px;
+    left: 50%;
+    margin-left: -419px; }
+
+#outputVideo, #motion-track-overlay {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  -o-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border: 1px solid white;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+
+#motion-control-helper {
+  width: 160px;
+  height: 120px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  display: none; }
+  #motion-control-helper #motion-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 1px;
+    background-color: greenyellow; }
+  #motion-control-helper .motion-area {
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    height: 120px; }
+  #motion-control-helper #left-motion-area {
+    left: 0;
+    height: 120px;
+    width: 65px;
+    background: blue; }
+  #motion-control-helper #center-motion-area {
+    left: 65px;
+    height: 120px;
+    width: 30px;
+    background: red; }
+  #motion-control-helper #right-motion-area {
+    left: 95px;
+    height: 120px;
+    width: 65px;
+    background: blue; }
+
+.view {
+  display: none;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  width: 970px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#view-game #canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 970px;
+  height: 500px;
+  background-color: #acdce6;
+  moz-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+#view-instructions {
+  background: rgba(0, 0, 0, 0.7); }
+  #view-instructions .instructions {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #view-instructions .move-complete {
+    position: absolute;
+    top: 168px;
+    left: 50%; }
+    #view-instructions .move-complete#move-left-complete {
+      margin-left: -49px; }
+    #view-instructions .move-complete#move-right-complete {
+      margin-left: -37px; }
+  #view-instructions #move-right-text, #view-instructions #move-left-text {
+    position: absolute;
+    top: 128px;
+    left: 50%; }
+  #view-instructions #move-right-text {
+    margin-left: -158px; }
+  #view-instructions #move-left-text {
+    margin-left: -146px; }
+  #view-instructions #move-right-head, #view-instructions #move-left-head, #view-instructions .move-body {
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    margin-left: -43px; }
+  #view-instructions #how-to-play {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    margin-left: -162px; }
+  #view-instructions #options-header {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    margin-left: -162px; }
+  #view-instructions #options-copy {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    margin-left: -225px; }
+  #view-instructions .options-cta {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    top: 325px; }
+  #view-instructions #resume {
+    position: absolute;
+    left: 50%;
+    margin-left: -185px; }
+  #view-instructions #restart {
+    position: absolute;
+    left: 50%;
+    margin-left: -48px; }
+  #view-instructions #end-game {
+    position: absolute;
+    left: 50%;
+    margin-left: 85px; }
+  #view-instructions #cta-ready-keyboard, #view-instructions #cta-ready-camera {
+    position: absolute;
+    left: 50%;
+    margin-left: -77px;
+    cursor: pointer; }
+  #view-instructions .cta-skip-tutorial {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    margin-left: -55px;
+    cursor: pointer; }
+  #view-instructions #cta-ready-camera {
+    top: 244px; }
+  #view-instructions #cta-ready-keyboard {
+    top: 255px; }
+  #view-instructions #also-keyboard-controls {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    margin-left: -156px; }
+  #view-instructions #keyboard-controls {
+    position: absolute;
+    top: 121px;
+    left: 50%;
+    margin-left: -365px; }
+  #view-instructions #allow-camera-text {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    margin-left: -122px; }
+  #view-instructions .car {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); }
+  #view-instructions #car-straight {
+    margin-left: -115px;
+    width: 230px; }
+  #view-instructions #car-left, #view-instructions #car-right {
+    margin-left: -120px;
+    width: 240px; }
+
+#view-end-game .end-game-asset {
+  position: absolute; }
+#view-end-game #end-game-header {
+  top: 35px;
+  left: 50%;
+  margin-left: -295px; }
+#view-end-game #end-game-cta {
+  top: 155px;
+  left: 50%;
+  margin-left: -93px;
+  cursor: pointer; }
+#view-end-game #end-game-restart {
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer; }

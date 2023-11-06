@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fiat Masthead</title>
+    <meta data-template-name="Template_H5T_mhexpanding-970x250-image">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+     <script type="text/javascript" src="https://www.gstatic.com/external_hosted/polymer/custom.elements.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/ads/ci/ytclosebutton/1/ytclosebutton_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinelite_1.19.0_13e3bd0e510d63fd5e5ef9bf9dac7017_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.19.0_cfbff7d208ccfdbe176b9855af1eb1fa_min.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.19.0_422f021fad4c20f20cf3640a06ac39e9_min.js"></script>
+	<script src="js/vendor/zepto.min.js"></script> -->
+	<script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/vendor/TweenMax.min.js"></script>
+
+
+</head>
+<body>
+	<div id="main-panel">
+		<!-- LOCK-UPS -->
+		<img id="abarth-logo" src="images/abarth-logo-large.png" alt="Abarth"/>
+
+
+		<div id="expanded-panel">
+			<img class="top-gradient" src="images/top-gradient.png" alt="gradient"/>
+
+			<audio id="car-run-audio">
+				<source src='car-run.mp3' type="audio/mpeg">
+			</audio>
+
+			<audio id="beep-audio">
+				<source src='beep.mp3' type="audio/mpeg">
+			</audio>
+
+			<audio id="go-audio">
+				<source src='go.mp3' type="audio/mpeg">
+			</audio>
+
+			<audio id="success-audio">
+				<source src='success.mp3' type="audio/mpeg">
+			</audio>
+
+			<audio id="car-impact-audio">
+				<source src='car-impact.mp3' type="audio/mpeg">
+			</audio>
+
+
+
+			<div id='fps'></div>
+
+			<div id="view-instructions" class="view">
+
+				<img id="how-to-play" src="images/how-to-play.png" alt="How to play"/>
+				<img id="options-header" src="images/game-options-header.png" alt="Game Options"/>
+
+				<div id="allow-camera" class="instructions">
+					<img id="allow-camera-text" src="images/allow-camera.png" alt="Allow your camera"/>
+				</div>
+
+				<div id="move-right" class="instructions">
+					<img id="move-right-complete" class="move-complete" src="images/body-complete-right.png" alt="Complete"/>
+					<img id="move-right-text" src="images/move-right-text.png" alt="Move Right"/>
+					<img id="move-right-head" src="images/move-right.png" alt="Move Right"/>
+					<img class="move-body" src="images/move-body.png" alt="Move Body"/>
+					<img class="cta-skip-tutorial" src="images/cta-skip-tutorial.png" alt="Skip Tutorial"/>
+				</div>
+
+				<div id="move-left" class="instructions">
+					<img id="move-left-complete" class="move-complete" src="images/body-complete-left.png" alt="Complete"/>
+					<img id="move-left-text" src="images/move-left-text.png" alt="Move Left"/>
+					<img id="move-left-head" src="images/move-left.png" alt="Move Left"/>
+					<img class="move-body" src="images/move-body.png" alt="Move Body"/>
+					<img class="cta-skip-tutorial" src="images/cta-skip-tutorial.png" alt="Skip Tutorial"/>
+				</div>
+
+				<div id="also-use-keyboard" class="instructions">
+					<img id="also-keyboard-controls" src="images/also-use-arrow-keys.png" alt="Keyboard controls"/>
+					<img id="cta-ready-camera" src="images/cta-ready.png" alt="I'm Ready"/>
+				</div>
+
+				<div id="how-to-play-keyboard" class="instructions">
+					<img id="keyboard-controls" src="images/how-to-play-keyboard.png" alt="Keyboard controls"/>
+					<img id="cta-ready-keyboard" src="images/cta-ready.png" alt="I'm Ready"/>
+				</div>
+
+				<div id="options-screen" class="instructions">
+					<img id="options-copy" src="images/game-options.png" alt="Game Options"/>
+					<img id="resume" class="options-cta" src="images/resume.png" alt="Resume"/>
+					<img id="restart" class="options-cta" src="images/restart.png" alt="Restart"/>
+					<img id="end-game" class="options-cta" src="images/end-game.png" alt="End Game"/>
+				</div>
+
+				<img id="car-right" class="car" src="images/car-right.png" alt="Car Right"/>
+				<img id="car-straight" class="car" src="images/car-straight.png" alt="Car Straight"/>
+				<img id="car-left" class="car" src="images/car-left.png" alt="Car Left"/>
+			</div>
+
+			<div id="view-game" class="view">
+				<div id="game-hud">
+					<img id="ready-1" class="race-starter" src="images/1.png" alt="1"/>
+					<img id="ready-2" class="race-starter" src="images/2.png" alt="2"/>
+					<img id="ready-3" class="race-starter" src="images/3.png" alt="3"/>
+					<img id="go" class="race-starter" src="images/go.png" alt="GO"/>
+
+					<img id="hud-lap-1" class="hud-lap" src="images/hud-lap-1.png" alt="Lap 1"/>
+					<img id="hud-lap-2" class="hud-lap" src="images/hud-lap-2.png" alt="Lap 2"/>
+					<img id="hud-lap-3" class="hud-lap" src="images/hud-lap-3.png" alt="Lap 3"/>
+					<div id="hud-lap-time" class="hud-lap"></div>
+
+					<img id="gold" src="images/gold.png" alt="gold">
+					<img id="silver" src="images/silver.png" alt="silver">
+					<img id="bronze" src="images/bronze.png" alt="bronze">
+
+					<img id="nice-driving" src="images/nice-driving.png" alt="Nice Driving!!"/>
+
+					<img id="hud-options" class="hud-item" src="images/hud-help.png" alt="Help"/>
+					<img class="hud-sound hud-sound-unmuted hud-item" src="images/hud-mute.png" alt="Help"/>
+					<img class="hud-sound hud-sound-muted hud-item" src="images/hud-mute-active.png" alt="Help"/>
+				</div>
+
+				<canvas id="canvas">
+				</canvas>
+
+			</div>
+
+
+			<div id="view-end-game" class="view">
+				<img id="end-game-bg" class="end-game-asset" src="images/end-game-bg.jpg" alt="End Game"/>
+				<img id="end-game-header" class="end-game-asset" src="images/the-thrilling-new-abarth.png" alt="The Thrilling New Abarth 124 Spider"/>
+				<a target="_blank" href="http://www.fiat.com.au/request-a-test-drive-124">
+					<img id="end-game-cta" class="end-game-asset" src="images/book-a-test-drive.png" alt="Book A Test Drive"/>
+				</a>
+				<img id="end-game-restart" class="end-game-asset" src="images/restart-end-game.png" alt="Restart Game"/>
+			</div>
+
+		</div>
+
+
+		<div id="motion-control-helper">
+			<div id="motion-line"></div>
+			<div id="left-motion-area" class="motion-area"></div>
+			<div id="center-motion-area" class="motion-area"></div>
+			<div id="right-motion-area" class="motion-area"></div>
+		</div>
+
+		<canvas id="inputVideo" width="160" height="120" style="display:none"></canvas>
+		<video id="outputVideo" autoplay="" loop="" width="160" height="120" src=""></video>
+		<canvas id="motion-track-overlay" width="160" height="120"></canvas>
+
+
+	</div>
+
+
+	<script src="js/siteCore.js"></script>
+
+</body>
+</html>
